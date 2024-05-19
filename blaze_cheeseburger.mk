@@ -12,9 +12,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/cheeseburger/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_cheeseburger
+PRODUCT_NAME := blaze_cheeseburger
 PRODUCT_DEVICE := cheeseburger
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -35,3 +35,13 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := OnePlus/OnePlus5/OnePlus5:10/QKQ1.191014.012/2010292059:user/release-keys
 
 TARGET_VENDOR := oneplus
+
+
+# Blaze Specific
+BLAZE_BUILD_TYPE := UNOFFICIAL
+BLAZE_MAINTAINER := Zed
+# Define bootanimation resolution.
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
