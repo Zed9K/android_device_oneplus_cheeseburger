@@ -38,8 +38,6 @@ BUILD_FINGERPRINT := OnePlus/OnePlus5/OnePlus5:10/QKQ1.191014.012/2010292059:use
 
 TARGET_VENDOR := oneplus
 
-# Make it Unofficial instead of Community
-RISING_BUILDTYPE := UNOFFICIAL
 # Ship with Aperture Camera
 PRODUCT_NO_CAMERA := false
 # Ship with Blur
