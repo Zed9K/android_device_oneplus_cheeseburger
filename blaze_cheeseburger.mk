@@ -40,8 +40,18 @@ TARGET_VENDOR := oneplus
 # Blaze Specific
 BLAZE_BUILD_TYPE := UNOFFICIAL
 BLAZE_MAINTAINER := Zed
+
 # Define bootanimation resolution.
 TARGET_BOOT_ANIMATION_RES := 1080
+
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# Ship with Gapps
+WITH_GMS := true
+
+# Support Google call recording
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
