@@ -22,17 +22,15 @@ PRODUCT_MODEL := ONEPLUS A5000
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
-PRODUCT_SYSTEM_DEVICE := OnePlus5
-PRODUCT_SYSTEM_NAME := OnePlus5
-
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE=OnePlus5 \
-    TARGET_PRODUCT=OnePlus5
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="OnePlus5-user 10 QKQ1.191014.012 2010292059 release-keys"
-
-BUILD_FINGERPRINT := OnePlus/OnePlus5/OnePlus5:10/QKQ1.191014.012/2010292059:user/release-keys
+    BuildDesc="OnePlus5-user 10 QKQ1.191014.012 2010292059 release-keys" \
+    BuildFingerprint=OnePlus/OnePlus5/OnePlus5:10/QKQ1.191014.012/2010292059:user/release-keys \
+    DeviceName=OnePlus5 \
+    DeviceProduct=OnePlus5 \
+    SystemDevice=OnePlus5 \
+    SystemName=OnePlus5 \
+    RISING_CHIPSET="Snapdragon 835" \
+    RISING_MAINTAINER="Zed"
 
 TARGET_VENDOR := oneplus
 
@@ -44,13 +42,3 @@ TARGET_SUPPORTS_CALL_RECORDING := true
 TARGET_ENABLE_BLUR := true
 # Remove MATLOG
 TARGET_INCLUDE_MATLOG := false
-# Ship with Gapps
-WITH_GMS := true
-TARGET_CORE_GMS := true
-TARGET_DEFAULT_PIXEL_LAUNCHER := false
-PRODUCT_PACKAGES += \
-   MarkupGoogle \
-   LatinIMEGooglePrebuilt \
-   PrebuiltDeskClockGoogle \
-   CalculatorGooglePrebuilt \
-   CalendarGooglePrebuilt
