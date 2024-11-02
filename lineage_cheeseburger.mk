@@ -29,8 +29,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=OnePlus5 \
     SystemDevice=OnePlus5 \
     SystemName=OnePlus5 \
-    RISING_CHIPSET="Snapdragon 835" \
-    RISING_MAINTAINER="Zed"
+    RisingChipset="Snapdragon 835" \
+    RisingMaintainer="Zed"
 
 TARGET_VENDOR := oneplus
 
